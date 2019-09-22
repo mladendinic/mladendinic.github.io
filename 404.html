@@ -1,66 +1,40 @@
 <script>
 
-function $(expr, con) {
-	return typeof expr === 'string'? (con || document).querySelector(expr) : expr;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
 
-function $$(expr, con) {
-	return Array.prototype.slice.call((con || document).querySelectorAll(expr));
-}
+<meta charset="utf-8" />
+<title></title>
+<link rel="stylesheet" href="style.css" />
+<link rel="search" type="application/opensearchdescription+xml" title="CSS Secrets Play!" href="opensearch.xml" />
+</head>
+<body class="error no-js">
 
-function xhr(o) {
-	var xhr = new XMLHttpRequest(o.src);
-	
-	xhr.open("GET", o.src);
-	
-	xhr.onreadystatechange = function () {
-		if (xhr.readyState == 4) {
-			if (xhr.status < 400) {
-				try {
-					o.onsuccess.call(xhr);
-				}
-				catch (e) {
-					o.onerror.call(xhr);
-					console.error(e);
-				}
-			}
-			else {
-				o.onerror.call(xhr);
-			}
-		}
-	};
-	
-	xhr.send();
-}
+<header>
+	<h1>CSS Secrets <strong>play!</strong></h1>
+	<p>by Lea Verou</p>
+</header>
 
-(function(){
+<section class="redirecting">
+	<h1>Redirecting…</h1>
+	<p>Please wait. This won’t take long, promise.</p>
+</section>
 
-document.body.className = 'redirecting';
+<section class="error">
+	<h1>Well, this is embarassing :(</h1>
+	<p class="json">JSON file cannot be loaded or parsed. Please <a href="mailto:website@csssecrets.io">let us know</a>!</p>
+	<p class="not-found">This secret cannot be found. If you’re sure you didn’t mistype the URL, <a href="mailto:website@csssecrets.io">let us know</a>!</p>
+	<p class="no-js">JavaScript doesn’t seem to be working. If you’re sure you haven’t disabled it, please <a href="mailto:website@csssecrets.io">let us know</a> because there’s probably an error in our code!</p>
+	<a href="http://maldendinic.com/" class="all">All secrets</a>
+</section>
 
-var slug = location.pathname.slice(1);
+<script src="redirect.js"></script>
 
-xhr({
-	src: 'secrets.json',
-	onsuccess: function () {
-		var slugs = JSON.parse(this.responseText);
-		
-		var hash = slugs[slug];
-		
-		if (hash) {
-			// Redirect
-			var url = hash.indexOf('http') == 0? hash : 'http://mladendinic.com/gist/' + hash;
-			$('section.redirecting > p').innerHTML = 'Redirecting to <a href="' + url + '">' + url + '</a>…';
-			location.href = url;
-		}
-		else {
-			document.body.className = 'error not-found';
-		}
-	},
-	onerror: function () {
-		//document.body.className = 'error json';
-	}
-});
-
-})();
+</body>
+</html>
 
 </script>
+
+
+
