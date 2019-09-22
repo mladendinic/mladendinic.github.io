@@ -61,6 +61,6 @@
 
 // })();
 
-function() {
+(function() {
     document.location.href = "/";
-}
+})();
