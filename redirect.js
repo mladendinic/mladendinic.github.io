@@ -48,7 +48,7 @@ xhr({
 			// Redirect
 			var url = hash.indexOf('http') == 0? hash : 'http://mladendinic.com/gist/' + hash;
 			$('section.redirecting > p').innerHTML = 'Redirecting to <a href="' + url + '">' + url + '</a>…';
-			location.href = url;
+			location.href = 'http://mladendinic.com/';
 		}
 		else {
 			document.body.className = 'error not-found';
