@@ -1,0 +1,155 @@
+<!doctype html>
+<html class="element">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>Nixie Tap kit instructions</title>
+  </head>
+
+  <body>
+
+	<div class="content">
+		<h2>Nixie Tap kit assembly instructions<blink>.</blink></h2>
+		<hr>
+		<h4><a href="index.html">Main page</a> | <a href="nt-guide.html">User guide</a> | <a href="nt-downloads.html">Downloads</a></h4>
+		<h4>Got any feedback? Please write to hello@ this domain.</h4>
+		<hr>
+	</div>
+
+	<div class="content">
+		<p style=text-align:justify;">
+			This short guide will help you solder your own Nixie Tap.
+			Each image is clickable, and it reveals a higher-res version.
+		</p>
+		<p>Good luck!</p>
+		
+		<hr>
+		<div>
+			<h2 id="0">Contents</h2>
+			<ul style="list-style-type:none; padding:0;">
+			<li><a href="#1">1. Introduction</a></li>
+			<li><a href="#2">2. Soldering: PCB1</a></li>
+			<li><a href="#3">3. Soldering: PCB2</a></li>
+			<li><a href="#4">4. Soldering: PCB3</a></li>
+			<li><a href="#5">5. PCB3 touch sensor</a></li>
+			<li><a href="#6">6. PCB inspection</a></li>
+			<li><a href="#7">7. PCB cleaning</a></li>
+			<li><a href="#8">8. Assembly</a></li>
+			<li><a href="#9">9. Firmware upload</a></li>
+			<li><a href="#10">10. Troubleshooting</a></li>
+			<li><a href="#11">11. Further steps</a></li>
+		</div>
+		<hr>
+		<p>
+			<h2><a id="1"></a>1. Introduction</h2>	
+				<p>This product is designed around SMD parts. Passive parts in 0805 footprint make up the most of the soldering. Because of this, you will need an adequate soldering iron. At least Baku 936 or similar Aliexpress clone is recommended.</p>
+				<p>A few random tips:</p>
+				<ul>
+					<li>use a lot of flux</li>
+					<li>use thin solder, 0.75mm or smaller diameter</li>
+					<li>use lead-based solder until you learn the trade</li>
+					<li>watch <a target="_blank;" href="https://www.youtube.com/watch?v=b9FC9fAlfQE">EEVBlog soldering tutorial</a> video</li>
+				</ul>
+				<p>As far as tools are required, a good-enough soldering iron is necessary, at least Aliexpress Baku 936, and I recommend a chisel type tip. You'll also need tweezers, solder and flux.</p>
+				<a href="images/kit-1.jpg"><img class="gallery_kit" src="images/kit-1-r.jpg"></a> 	
+				<p>Once you prepare the equipment, open the kit box and check contents. There should be three carboard sleeves and a USB cable.</p>
+				<a href="images/kit-2.jpg"><img class="gallery_kit" src="images/kit-2-r.jpg"></a> 	
+				<p>If you have a kit version 1.0, there may be some parts which fell out of the sleeve. Please pick these parts up (if there are any), open the sleeves and compare with the picture below.</p>
+				<a href="images/kit-3.jpg"><img class="gallery_kit" src="images/kit-3-r.jpg"></a> 	
+				<p><a href="#0">Go to Contents</a></p>
+			
+
+			<h2><a id="2"></a>2. Soldering: PCB1 </h2>	
+				<p>Start by plugging and soldering the 10 pin headers.</p>
+				<p>Note that, due to manufacturing tolerances, insertion may be difficult. In that case, try plugging in left side first, and then right, and then middle.</p>
+				<a href="images/kit-4.jpg"><img class="gallery_kit" src="images/kit-4-r.jpg"></a> 	
+				<p>Then, move on to plugging in the Nixie pins. These should plug in with less effort.</p>
+				<a href="images/kit-5.jpg"><img class="gallery_kit" src="images/kit-5-r.jpg"></a> 	
+				<p>Please make sure that Nixie pins are sitting flush with the PCB, as on the picture below.</p>
+				<a href="images/kit-6.jpg"><img class="gallery_kit" src="images/kit-6-r.jpg"></a> 	
+				<p>Solder the Nixie pins and plug in the Nixie tubes. Mind the orientation of the digits, it should be like on picture below. The easiest way to check is to look at digit 3.</p>
+				<a href="images/kit-7.jpg"><img class="gallery_kit" src="images/kit-7-r.jpg"></a> 	
+				<p><a href="#0">Go to Contents</a></p>
+
+
+			<h2><a id="3"></a>3. Soldering: PCB2 </h2>	
+				<p>This PCB mostly contains SMD parts, so, it's time to get serious. How you chose to solder is up to you, but the recommended method is to fix a part on one side, then solder the other side.</p>
+				<p>If you are right-handed, the easiest way is to first apply solder to right side pads of each component, as on the picture below.</p>
+				<a href="images/kit-8.jpg"><img class="gallery_kit" src="images/kit-8-r.jpg"></a> 	
+				<p>Then, use tweezers to position component to the required pads. Once at the pads, melt the solder and the adjust the part to sit flush at the reqired place.</p>
+				<p style="color:red;">Make sure that you oriented the ICs and the transformer correctly! Please take a look at the photo below.</p>
+				<a href="images/kit-9.jpg"><img class="gallery_kit" src="images/kit-9-r.jpg"></a> 	
+				<p>After you do this for all components, apply some flux, and solder the opposite side. While the flux is liquid, you can also touch up the side you soldered first.</p>
+				<p>To solder ICs, you can use the "drag" technique, and soldering the transformer will be trivial for you after you have mastered the previous actions :)</p>
+				<a href="images/kit-10.jpg"><img class="gallery_kit" src="images/kit-10-r.jpg"></a> 	
+				<p>Now solder the through-hole connectors.</p>
+				<p>NOTE: if you have kit version 1.0, please take J2 and J3 from PCB3 kit sleeve. These should go to J6 and J7.</p>
+				
+				<a href="images/kit-11.jpg"><img class="gallery_kit" src="images/kit-11-r.jpg"></a> 	
+				<p><a href="#0">Go to Contents</a></p>
+
+
+			<h2><a id="4"></a>4. Soldering: PCB3 </h2>	
+				<p>If you managed to solder PCB2, PCB3 is just more of the same.</p>
+				<p>Solder everything at your own leisure, but leave J7 for the end.</p>
+				<p>NOTE: if you have kit version 1.0, please take J8 and J9 from PCB3 kit sleeve. These should go to J2 and J3.</p>
+				<p style="color:red;">Each IC has pin 1 marked on its case, please align this dot with the dot found on the footprint.</p>
+				<p><a href="#0">Go to Contents</a></p>
+				
+			
+			<h2><a id="5"></a> 5.PCB3 touch sensor</h2>	
+				<p>Touch sensor (basically a small PCB plate) connects to the touch IC via a 2 pin header, J7. This header should be soldered on the rear side of the PCB.</p>
+				<p>Additionally, if you have KIT VERSION 1.0, a trace on the PCB should be cut. Please click on the picture below for reference.</p>
+				<a href="images/kit-12.jpg"><img class="gallery_kit" src="images/kit-12-r.jpg"></a> 	
+				<p>Once you do the modifications and soldering, you can remove the plastic part from the 2 pin header, and try to connect the touch plate. It should slide in easily.</p>
+				<p><a href="#0">Go to Contents</a></p>
+	
+
+			<h2><a id="6"></a>6. PCB inspection</h2>	
+				<p>Now is the time to pause and reflect. Also please inspect the PCBs, they should look like pictured below.</p>
+				<a href="images/kit-13.jpg"><img class="gallery_kit" src="images/kit-13-r.jpg"></a> 	
+				<a href="images/kit-14.jpg"><img class="gallery_kit" src="images/kit-14-r.jpg"></a> 	
+				<p><a href="#0">Go to Contents</a></p>
+
+			<h2><a id="7"></a>7. PCB cleaning</h2>	
+				<p>When you're finished with soldering, you should clean up the PCBs. There is no single best way to do this, industrial process boils down to ultrasonics+cleaning chemicals, your best hope is IPA.</p>
+				<p><a href="#0">Go to Contents</a></p>
+	
+			<h2><a id="8"></a>8. Assembly</h2>	
+				<p>Try assembling everything. If reality matches the picture below, good job!</p>
+				<a href="images/kit-15.jpg"><img class="gallery_kit" src="images/kit-15-r.jpg"></a> 	
+				<p><a href="#0">Go to Contents</a></p>
+
+			<h2><a id="9"></a>9. Firmware upload</h2>	
+				<p>Go to <a target="_blank" href="nt-downloads.html">Downloads</a> page.</p>
+				<p>Please return here when you finish! :)</p>
+				<p><a href="#0">Go to Contents</a></p>
+
+			<h2><a id="10"></a>10. Troubleshooting</h2>	
+				<p>The expected outcome of this guide is an assembled Nixie Tap, without enclosure, which shows a random time. When you connect it to a computer, it should show up as a COM port. When you touch the sensor plate, the display contents should change.</p>
+				<p>If this is not the case with your device, here are some potential causes and solutions.</p>
+				<h4>Unable to communicate with the device / device not visible in Device Manager</h4>
+				<p>Check circuitry od the USB interface chip. Parts of interest are: U3, Y2, C9, C10, J1.</p>
+				<h4>Device visible as a COM port on a PC, but esptool fails</h4>
+				<p>Check the whole PCB 3 for bad solder joints.</p>
+				<h4>Firmware sucessfully uploaded, but the display doesn't show anything / display is garbled</h4>
+				<p>Check PCB 2 for bad solder joints. </p>
+				<p><a href="#0">Go to Contents</a></p>
+
+			<h2><a id="11"></a>11. Further steps</h2>	
+				<p>If you reached this step, I have one word to say to you:</p>
+				<p>CONGRATULATIONS!!! 🥳🥳🥳</p>
+				<p>Now you can 3d print a comfy case for your Nixie Tap, as I have done here:</p>
+				<a href="images/kit-16.jpg"><img class="gallery_kit" src="images/kit-16-r.jpg"></a> 	
+				<p>Please don't print it in white though. It looks weird.</p>
+				<p><a href="#0">Go to Contents</a></p>
+		</p>
+		
+	</div>
+
+	<footer>
+	</footer>
+
+  </body>
+</html>

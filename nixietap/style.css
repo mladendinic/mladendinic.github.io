@@ -1,0 +1,105 @@
+@font-face {
+  font-family: 'Gidole';
+  font-style:  normal;
+  font-weight: 100;
+  src: url("fonts/Gidole.woff2?v=3.10") format("woff2"),
+       url("fonts/Gidole.woff?v=3.10") format("woff");
+}
+
+body {
+	
+	font-family: 'Gidole', sans-serif;
+	background-color: rgb(245,245,245);
+	padding-bottom: 300px;
+	margin-top: 0px;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+a {
+	text-decoration:none;
+}
+a:link {
+	color:chocolate;
+}
+a:visited {
+	color:chocolate;
+}
+a:link {
+	color:chocolate;
+}
+a:hover {
+	text-decoration:underline;
+}
+a:active {
+	text-decoration:none;
+}
+
+footer {
+	display: block;
+	width: 100%;
+}
+
+
+hr { 
+  display: block;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 0;
+  margin-right: 95%;
+  border-style: solid;
+  border-width: 2px;
+} 
+
+.hr_title {
+  display: block;
+  margin-top: 0px;
+  margin-bottom: 2%;
+  margin-left: 0;
+  margin-right: 10%;
+  border-style:solid;
+  border-width: 4px;
+}
+
+.content {
+	width: 60%;
+}
+
+.hero {
+	display: block;
+	width: 20%;
+}
+
+.gallery {
+	width:7%;
+	
+}
+.gallery_kit {
+	width:60%;
+	
+}
+.gallery:hover {
+	box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.5);
+}
+.bgimg {
+    background: "images/hero.png";
+    opacity: 0.5;
+}
+
+.toc_items {
+	margin-bottom:1em;
+}
+.code {
+	font-style:italic;
+}
+
+blink {
+	font-size:larger;
+    animation: blinker 2s steps(1, end) infinite;
+
+    color: chocolate;
+       }
+@keyframes blinker {  
+    0% { opacity:0; }
+	50% {opacity:1;}
+ 
+}
