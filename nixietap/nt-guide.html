@@ -36,15 +36,16 @@
 	<div class="content">
 		<h2>Setup</h2>
 		<h3><a id="1"></a>0. Preparation</h3>
-		<p> <strong> <i>Before starting, please make sure that you have the latest firmware! You can find it on the</i> <a href="nt-downloads.html">Downloads</a><i> page.</i></strong> </p>
-		<p> Nixie Tap relies on third-party services for its crypto and temperature display features. If you want to use these features, you'll need to go to their respective websites and create accounts.</p>
-		<p> Data that you need:</p>
-		<ul>
-			<li>temperature - <a href=https://openweathermap.org/api>openweathermap.org/api</a> - <code>API KEY</code>, <code>CITY ID</code></li>
-			<li>cryptocurrency - <a href=https://coinmarketcap.com/api>coinmarketcap.com/api</a> - <code>API KEY</code>, <code>CURRENCY ID</code></li>
-		</ul>
+		<h4>Firmware</h4>
+		<p>Before starting, please make sure that you have the latest firmware! You can find it on the <a href="nt-downloads.html">Downloads</a> page.</p>
+		<h4>Temperature</h4>
+		<p> Nixie Tap relies on third-party service called Openweathermap for its temperature display features. If you want to use this feature, you'll need to go to their website and create free account.</p>
+		<p> Website is located at <a href=https://openweathermap.org/api>openweathermap.org/api</a>, from there you need to get your <code>API KEY</code> and <code>CITY ID</code>. Save these two parameters somewhere, you'll need them for Step 4.</p> 
 		<p><strong>Tip:</strong> you can find the <code>CITY ID</code> if you search for your city, and then click on it. URL will have numbers in it, these numbers are the actual <code>CITY ID</code>. For example, Boston MA's URL is <code>openweathermap.org/city/4930956</code>, so its <code>CITY ID</code> is <code>4930956</code>.</p>
-		<p>Keep your API keys and IDs somewhere offline, where you can copy-paste from, and on the same computer which you'll use for Nixie Tap setup! You will need these for steps 4. and 5.</p>
+		
+		<h4>Cryptocurrency</h4>
+		<p> Nixie Tap relies on third-party service called Coinmarketcap for its temperature display features. If you want to use this feature, you'll need to go to their website and create a free account.</p>
+		<p> Website is located at <a href=https://coinmarketcap.com/api>coinmarketcap.com/api</a>, from there you need to get your <code>API KEY</code> and <code>CURRENCY ID</code>. Save these two parameters somewhere, you'll need them for Step 4.</p> 
 
 		<h3><a id="2"></a>1. Entering hotspot</h3>
 		<p>Press the button at the back of the device. Hotspot mode is now active, and Nixie Tap will wait for you to connect.</p>
@@ -66,12 +67,12 @@
 		<img class="gallery_kit" src="images/nt-guide-21.jpg">
 		<p>Manual will allow you to set time without needing to go online. Time will be kept via an onboard real-time clock and a precision oscillator. This circuitry will have standby power, so you don't need to adjust time every time you turn of the device.
 		<p>Automatic mode tells Nixie Tap to ping an NTP server in the background, and apply the desired offset from GMT, as well as the Daylight Savings Time.</p>
-		<p><a href="#5">Go to Contents</a></p>
+		<p><a href="#0">Go to Contents</a></p>
 
 		<h3><a id="5"></a>4. Temperature</h3>
 		<p>Click on show temperature, put <code>API KEY</code> and <code>CITY ID</code> into their respective fields in the Hotspot.</p>
 		<img class="gallery_kit" src="images/nt-guide-3.jpg">
-		<p><a href="#6">Go to Contents</a></p>
+		<p><a href="#0">Go to Contents</a></p>
 
 		<h3><a id="6"></a>5. Cryptocurrency</h3>
 		<p>Click on show cryptocurrency price, put <code>API KEY</code> and <code>CURRENCY ID</code> into their respective fields in the Hotspot.</p>
