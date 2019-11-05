@@ -1,0 +1,8 @@
+Fixes from 1.0:
+- redesigned Hotspot
+- cryptocurrency display now works with the latest CoinmarketCap API
+- minor bugfixes
+
+
+Known issues:
+- antipoison routine active only on time slot

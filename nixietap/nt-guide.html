@@ -14,28 +14,95 @@
 		<hr>
 		<h4><a href="index.html">Main page</a> | <a href="nt-downloads.html">Downloads</a> | <a href="nt-kit.html">Kit assembly instructions</a></h4>
 		<h4>Got any feedback? Please write to hello@ this domain.</h4>
+		<p>Last updated: 05.11.2019.</p>
 		<hr>
 	</div>
-	
-	<div class="content">
-		
-		<p style=text-align:justify;">
-			<h2>A key function is under development, so the guide will come at a later date.</h2>
-			<h4>Until then, here are a few things that you can try.</h4>
-	</div>
-	<ol>
-		<li> Press the button on the back of the enclosure</li>
-		<li> Using your laptop or phone, do a WiFi scan</li>
-		<li> Connect to the NixieTap network, default password is NixieTap </li>
-		<li> (if a login page doesn't show up, navigate to 192.168.4.1. from your browser)</li>
-	</ol>
 
-		Now you're on the hotspot page, where you adjust all settings. For now it looks awful, but it will look better soon :)
-	<ol start="5">
-		<li> For accurate GMT time, go to Configure WiFi, and select the network that Nixie Tap should use. When you click Save, the hotspot will terminate</li>
-		<li> To set GMT offset, push the button again, connect to NixieTap, go to Setup, and in the Semi-auto settings, write your desired time zone offset and DST</li>
-		<li> Once you're done, press Back on your browser and click the Exit button on the hotspot </li>
-	</ol>	
+
+	<div>
+		<h2 id="0">Contents</h2>
+		<ul style="list-style-type:none; padding:0;">
+		<li><a href="#1">0. Preparation</a></li>
+		<li><a href="#2">1. Hotspot</a></li>
+		<li><a href="#3">2. Connecting to Wi-Fi</a></li>
+		<li><a href="#4">3. Time and date</a></li>
+		<li><a href="#5">4. Temperature</a></li>
+		<li><a href="#6">5. Cryptocurrency</a></li>
+		<li><a href="#7">6. Final check and done</a></li>
+		<li><a href="#8">7. Troubleshooting</a></li>
+		<li><a href="#9">8. Serial port</a></li>
+	</div>
+
+	<div class="content">
+		<h2>Setup</h2>
+		<h3><a id="1"></a>0. Preparation</h3>
+		<p> <strong> <i>Before starting, please make sure that you have the latest firmware! You can find it on the</i> <a href="nt-downloads.html">Downloads</a><i> page.</i></strong> </p>
+		<p> Nixie Tap relies on third-party services for its crypto and temperature display features. If you want to use these features, you'll need to go to their respective websites and create accounts.</p>
+		<p> Data that you need:</p>
+		<ul>
+			<li>temperature - <a href=https://openweathermap.org/api>openweathermap.org/api</a> - <code>API KEY</code>, <code>CITY ID</code></li>
+			<li>cryptocurrency - <a href=https://coinmarketcap.com/api>coinmarketcap.com/api</a> - <code>API KEY</code>, <code>CURRENCY ID</code></li>
+		</ul>
+		<p><strong>Tip:</strong> you can find the <code>CITY ID</code> if you search for your city, and then click on it. URL will have numbers in it, these numbers are the actual <code>CITY ID</code>. For example, Boston MA's URL is <code>openweathermap.org/city/4930956</code>, so its <code>CITY ID</code> is <code>4930956</code>.</p>
+		<p>Keep your API keys and IDs somewhere offline, where you can copy-paste from, and on the same computer which you'll use for Nixie Tap setup! You will need these for steps 4. and 5.</p>
+
+		<h3><a id="2"></a>1. Entering hotspot</h3>
+		<p>Press the button at the back of the device. Hotspot mode is now active, and Nixie Tap will wait for you to connect.</p>
+		<p>Look for a Wi-Fi network called <code>NixieTap</code>. When you connect to it, a captive portal should be served. If not, go to your browser URL bar and type: <code>192.168.4.1.</code></p>
+		<p>You should get something like picture below.</p>
+		<img class="gallery_kit" src="images/nt-guide-1.jpg">
+		<p><a href="#0">Go to Contents</a></p>
+
+		<h3><a id="3"></a>2. Connecting to Wi-Fi</h3>
+		<p><i>If you wish to keep your device offline-only, you can skip this step.</i></p>
+		<p>You can configure all options related to Wi-Fi on the uppermost part of the page.</p>
+		<p>By default, Nixie Tap access point name and passwords are <code>NixieTap</code> and <code>NixieTap</code>. In the first part, you can change this to whatever you like, keeping in mind that password must be at least 8 characters.</p>
+		<img class="gallery_kit" src="images/nt-guide-2.jpg">
+		<p>In the second part you can set which Wi-Fi network should be used for data. Click on the desired network, and enter its password.<p>
+		<p><a href="#0">Go to Contents</a></p>
+
+		<h3><a id="4"></a>3. Time and date</h3>
+		<p>There are two ways to set time: manual and automatic.</p>
+		<img class="gallery_kit" src="images/nt-guide-21.jpg">
+		<p>Manual will allow you to set time without needing to go online. Time will be kept via an onboard real-time clock and a precision oscillator. This circuitry will have standby power, so you don't need to adjust time every time you turn of the device.
+		<p>Automatic mode tells Nixie Tap to ping an NTP server in the background, and apply the desired offset from GMT, as well as the Daylight Savings Time.</p>
+		<p><a href="#5">Go to Contents</a></p>
+
+		<h3><a id="5"></a>4. Temperature</h3>
+		<p>Click on show temperature, put <code>API KEY</code> and <code>CITY ID</code> into their respective fields in the Hotspot.</p>
+		<img class="gallery_kit" src="images/nt-guide-3.jpg">
+		<p><a href="#6">Go to Contents</a></p>
+
+		<h3><a id="6"></a>5. Cryptocurrency</h3>
+		<p>Click on show cryptocurrency price, put <code>API KEY</code> and <code>CURRENCY ID</code> into their respective fields in the Hotspot.</p>
+		<img class="gallery_kit" src="images/nt-guide-4.jpg">
+		<p><a href="#0">Go to Contents</a></p>
+
+		<h3><a id="7"></a>6. Final check and done</h3>
+		<p>Once you have set up everything, click on Save. Hotspot will disconnect, and, hopefully, your Nixie Tap is ready!</p>
+		<p><a href="#0">Go to Contents</a></p>
+
+		<h3><a id="8"></a>7. Troubleshooting</h3>
+		<h4>7.1 Inacurrate time or date heck WiFi password</h4>
+		<p>As Nixie Tap keeps accurate time via two sources - NTP and RTC, with NTP being more trustworthy, maybe there is something wrong with your WiFi settings.</p>
+		<h4>7.2 Cryptocurrency value is zero or wrong</h4>
+		<p>Check API key, currency ID and WiFi settings. If everything seems OK, head on to Coinmarketcap website, there you can see what's happening with requests which Nixie Tap sends.</p>
+		<h4>7.3 Temperature value is zero or wrong</h4>
+		<p>Same as 7.2, only for Openweathermap.</p>
+		<h4>7.4 Display switches to time or date by itself</h4>
+		<p>Nixie Tap touch sensor is very sensitive, and may pick up spurious or external electromagnetic fields. If you built the kit, please check <a href="https://mladendinic.com/nixietap/nt-kit.html#5">Step 5 of the assembly guide</a>. If you cannot solve this, please contact me.</p>
+
+		<p><a href="#0">Go to Contents</a></p>
+
+		<h3><a id="9"></a>8. Serial port</h3>
+		<p>If you want to develop your own firmware, or just want to debug, you should know that Nixie Tap has a serial port built in! Just find it on the correct COM port, with <code>115200</code> baud rate.</p>
+		<p>To make it easier to connect, hold the Nixie Tap button while connecting the USB cable. It will enter into a delay, giving you 3 seconds to open the serial monitor, while showing you the firmware version.</p>
+		<p>Commands currently supported on the serial port:</p>
+		<ul>
+		<li> <code>init</code> - factory reset, resets all parameters, including WiFi passwords</li>
+		</ul>
+		<p>All commands expect <code>/n</code> termination.</p>
+		<p><a href="#0">Go to Contents</a></p>
 	<footer>
 	</footer>
 

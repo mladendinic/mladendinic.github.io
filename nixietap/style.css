@@ -13,7 +13,6 @@ body {
 	padding-bottom: 300px;
 	margin-top: 0px;
 	margin-left: 10%;
-	margin-right: 10%;
 }
 a {
 	text-decoration:none;
@@ -38,7 +37,10 @@ footer {
 	display: block;
 	width: 100%;
 }
-
+code {
+	font-size: medium;
+	background-color:rgba(210,105,30,0.3);
+}
 
 hr { 
   display: block;
@@ -57,11 +59,11 @@ hr {
   margin-left: 0;
   margin-right: 10%;
   border-style:solid;
-  border-width: 4px;
+  border-width: 3px;
 }
 
 .content {
-	width: 60%;
+	width: 80%;
 }
 
 .hero {

@@ -14,24 +14,26 @@
 		<hr>
 		<h4><a href="index.html">Main page</a> | <a href="nt-guide.html">User guide</a> | <a href="nt-kit.html">Kit assembly instructions</a></h4>
 		<h4>Got any feedback? Please write to hello@ this domain.</h4>
+		<p>Last updated: 05.11.2019.</p>
 		<hr>
 	</div>
 	
 	<div class="content">
 		
-		<p style=text-align:justify;">
+		<p style="text-align:justify;">
 			<h2>Firmware update</h2>
 			Nixie Tap is based on the ESP8266, and the tool of choice for firmware updates is the official esptool, which you can install through Python.
 			Firmware development is done on <a href="https://github.com/mladendinic/nixietap">Nixie Tap Github repo</a>, and stable versions will be put here.
 
 			<h3> Latest firmware </h3>
-			<a href="firmware/nt-firmware-1.0.bin">nt-firmware-1.0.bin</a>
+			<p><a href="firmware/nt-firmware-1.1.bin">nt-firmware-1.1.bin</a> | <a href="firmware/nt-firmware-1.1-changelog.txt">nt-firmware-1.1-changelog.txt</a></p>
+			<p><a href="firmware/nt-firmware-1.0.bin">nt-firmware-1.0.bin</a> | <a href="firmware/nt-firmware-1.0-changelog.txt">nt-firmware-1.0-changelog.txt</a></p>
 
 			<h3>GNU/Linux</h3>
 			<ol>
-				<li> In a terminal window type:<span class="code">sudo apt install esptool</span></li>
+				<li> In a terminal window type:<span class="code"> sudo apt install esptool</span></li>
 				<li> Grab the latest Nixie Tap firmware file, and save it somewhere, e.g. Desktop</li>
-				<li> Open a terminal window, navigate to where you saved the file and type:<span class="code">sudo esptool write_flash 0x00000 nt-firmware-1.0.bin</span></li>
+				<li> Open a terminal window, navigate to where you saved the file and type:<span class="code"> sudo esptool write_flash 0x00000 nt-firmware-1.0.bin</span></li>
 			</ol>
 
 			<h3>Windows</h3>
