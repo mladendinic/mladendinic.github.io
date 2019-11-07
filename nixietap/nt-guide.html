@@ -39,13 +39,13 @@
 		<h4>Firmware</h4>
 		<p>Before starting, please make sure that you have the latest firmware! You can find it on the <a href="nt-downloads.html">Downloads</a> page.</p>
 		<h4>Temperature</h4>
-		<p> Nixie Tap relies on third-party service called Openweathermap for its temperature display features. If you want to use this feature, you'll need to go to their website and create free account.</p>
-		<p> Website is located at <a href=https://openweathermap.org/api>openweathermap.org/api</a>, from there you need to get your <code>API KEY</code> and <code>CITY ID</code>. Save these two parameters somewhere, you'll need them for Step 4.</p> 
-		<p><strong>Tip:</strong> you can find the <code>CITY ID</code> if you search for your city, and then click on it. URL will have numbers in it, these numbers are the actual <code>CITY ID</code>. For example, Boston MA's URL is <code>openweathermap.org/city/4930956</code>, so its <code>CITY ID</code> is <code>4930956</code>.</p>
+		<p> Nixie Tap relies on a third-party service for its temperature display feature. This means that, in order to use this feature, you'll need to go to their website and create a free account.</p>
+		<p> Service is located at <a href=https://openweathermap.org/api>openweathermap.org/api</a>, from there you need to get your <code>API KEY</code> and <code>CITY ID</code>. Save these two parameters somewhere, you'll need them for Step 4.</p> 
+		<p>You can find the <code>CITY ID</code> if you search for your city, and then click on it. URL will have numbers in it, these numbers are the actual <code>CITY ID</code>. For example, URL for Boston, MA, is openweathermap.org/city/4930956, so its <code>CITY ID</code> is <code>4930956</code>.</p>
 		
 		<h4>Cryptocurrency</h4>
-		<p> Nixie Tap relies on third-party service called Coinmarketcap for its temperature display features. If you want to use this feature, you'll need to go to their website and create a free account.</p>
-		<p> Website is located at <a href=https://coinmarketcap.com/api>coinmarketcap.com/api</a>, from there you need to get your <code>API KEY</code> and <code>CURRENCY ID</code>. Save these two parameters somewhere, you'll need them for Step 4.</p> 
+		<p> Nixie Tap relies on a third-party service for its cryptocurrency display feature. This means that, in order to use this feature, you'll need to go to their website and create a free account.</p>
+		<p> Service is located at <a href=https://coinmarketcap.com/api>coinmarketcap.com/api</a>, from there you need to get your <code>API KEY</code> and <code>CURRENCY ID</code>. Save these two parameters somewhere, you'll need them for Step 4.</p> 
 
 		<h3><a id="2"></a>1. Entering hotspot</h3>
 		<p>Press the button at the back of the device. Hotspot mode is now active, and Nixie Tap will wait for you to connect.</p>
@@ -65,7 +65,7 @@
 		<h3><a id="4"></a>3. Time and date</h3>
 		<p>There are two ways to set time: manual and automatic.</p>
 		<img class="gallery_kit" src="images/nt-guide-21.jpg">
-		<p>Manual will allow you to set time without needing to go online. Time will be kept via an onboard real-time clock and a precision oscillator. This circuitry will have standby power, so you don't need to adjust time every time you turn of the device.
+		<p>Manual will allow you to set time without needing to go online. Time will be kept via an onboard real-time clock and a precision oscillator. This circuitry will have standby power, so you don't need to adjust time every time you turn off the device.
 		<p>Automatic mode tells Nixie Tap to ping an NTP server in the background, and apply the desired offset from GMT, as well as the Daylight Savings Time.</p>
 		<p><a href="#0">Go to Contents</a></p>
 
@@ -84,14 +84,14 @@
 		<p><a href="#0">Go to Contents</a></p>
 
 		<h3><a id="8"></a>7. Troubleshooting</h3>
-		<h4>7.1 Inacurrate time or date heck WiFi password</h4>
+		<h4>7.1 Inacurrate time or date</h4>
 		<p>As Nixie Tap keeps accurate time via two sources - NTP and RTC, with NTP being more trustworthy, maybe there is something wrong with your WiFi settings.</p>
 		<h4>7.2 Cryptocurrency value is zero or wrong</h4>
 		<p>Check API key, currency ID and WiFi settings. If everything seems OK, head on to Coinmarketcap website, there you can see what's happening with requests which Nixie Tap sends.</p>
 		<h4>7.3 Temperature value is zero or wrong</h4>
 		<p>Same as 7.2, only for Openweathermap.</p>
 		<h4>7.4 Display switches to time or date by itself</h4>
-		<p>Nixie Tap touch sensor is very sensitive, and may pick up spurious or external electromagnetic fields. If you built the kit, please check <a href="https://mladendinic.com/nixietap/nt-kit.html#5">Step 5 of the assembly guide</a>. If you cannot solve this, please contact me.</p>
+		<p>Nixie Tap touch sensor is very sensitive, and may pick up spurious electromagnetic fields. If you built the kit, please check <a href="https://mladendinic.com/nixietap/nt-kit.html#5">Step 5 of the assembly guide</a>. If you cannot solve this, please contact me.</p>
 
 		<p><a href="#0">Go to Contents</a></p>
 
