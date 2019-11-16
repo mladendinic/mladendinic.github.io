@@ -14,7 +14,7 @@
 		<hr>
 		<h4><a href="index.html">Main page</a> | <a href="nt-guide.html">User guide</a> | <a href="nt-kit.html">Kit assembly instructions</a></h4>
 		<h4>Got any feedback? Please write to hello@ this domain.</h4>
-		<p>Last updated: 05.11.2019.</p>
+		<p>Last updated: 16.11.2019.</p>
 		<hr>
 	</div>
 	
@@ -34,6 +34,7 @@
 				<li> In a terminal window type:<span class="code"> sudo apt install esptool</span></li>
 				<li> Grab the latest Nixie Tap firmware file, and save it somewhere, e.g. Desktop</li>
 				<li> Open a terminal window, navigate to where you saved the file and type:<span class="code"> sudo esptool write_flash 0x00000 nt-firmware-1.0.bin</span></li>
+				<li> If the device won't boot, do a <span class="code">sudo esptool erase_flash</span> and repeat step 3</li>
 			</ol>
 
 			<h3>Windows</h3>
@@ -42,7 +43,10 @@
 				<li> Open the command prompt and type: <span class="code">pip install esptool</span></li>
 				<li> Grab the latest Nixie Tap firmware file and save it somewhere, e.g. Desktop</li>
 				<li> In a terminal window navigate to where you saved the file and type: <span class="code">esptool write_flash 0x00000 nt-firmware-1.0.bin</span></li>
+				<li> If the device won't boot, do a <span class="code">esptool erase_flash</span> and repeat step 4</li>
 			</ol>
+
+			
 		</p>
 
 		<p style=text-align:justify;">
