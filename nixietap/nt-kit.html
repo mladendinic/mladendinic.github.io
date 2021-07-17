@@ -14,7 +14,7 @@
 		<hr>
 		<h4><a href="index.html">Main page</a> | <a href="nt-guide.html">User guide</a> | <a href="nt-downloads.html">Downloads</a></h4>
 		<h4>Got any feedback? Please write to hello@ this domain.</h4>
-		<p>Last updated: 05.11.2019.</p>
+		<p>Last updated: 17.07.2021.</p>
 		<hr>
 	</div>
 
@@ -30,17 +30,18 @@
 			<h2 id="0">Contents</h2>
 			<ul style="list-style-type:none; padding:0;">
 			<li><a href="#1">1. Introduction</a></li>
-			<li><a href="#2">2. Soldering: PCB1</a></li>
-			<li><a href="#3">3. Soldering: PCB2</a></li>
-			<li><a href="#4">4. Soldering: PCB3</a></li>
-			<li><a href="#5">5. PCB3 touch sensor</a></li>
-			<li><a href="#6">6. PCB inspection</a></li>
-			<li><a href="#7">7. PCB cleaning</a></li>
-			<li><a href="#8">8. Assembly</a></li>
-			<li><a href="#9">9. Firmware upload</a></li>
-			<li><a href="#10">10. Initial configuration</a></li>
-			<li><a href="#11">11. Troubleshooting</a></li>
-			<li><a href="#12">12. Further steps</a></li>
+			<li><a href="#2">2. Kit revisions</a></li>
+			<li><a href="#3">3. Soldering: PCB1</a></li>
+			<li><a href="#4">4. Soldering: PCB2</a></li>
+			<li><a href="#5">5. Soldering: PCB3</a></li>
+			<li><a href="#6">6. PCB3 touch sensor</a></li>
+			<li><a href="#7">7. PCB inspection</a></li>
+			<li><a href="#8">8. PCB cleaning</a></li>
+			<li><a href="#9">9. Assembly</a></li>
+			<li><a href="#10">10. Firmware upload</a></li>
+			<li><a href="#11">11. Initial configuration</a></li>
+			<li><a href="#12">12. Troubleshooting</a></li>
+			<li><a href="#13">13. Further steps</a></li>
 		</div>
 		<hr>
 		<p>
@@ -55,14 +56,46 @@
 				</ul>
 				<p>As far as tools are required, a good-enough soldering iron is necessary, at least Aliexpress Baku 936, and I recommend a chisel type tip. You'll also need tweezers, solder and flux.</p>
 				<a href="images/kit-1.jpg"><img class="gallery_kit" src="images/kit-1-r.jpg"></a> 	
-				<p>Once you prepare the equipment, open the kit box and check contents. There should be three carboard sleeves and a USB cable.</p>
+				<p>Once you prepare the equipment, open the kit box and check contents. You should find three carboard sleeves and a USB cable.</p>
 				<a href="images/kit-2.jpg"><img class="gallery_kit" src="images/kit-2-r.jpg"></a> 	
-				<p>If you have a kit version 1.0, there may be some parts which fell out of the sleeve. Please pick these parts up (if there are any), open the sleeves and compare with the picture below.</p>
-				<a href="images/kit-3.jpg"><img class="gallery_kit" src="images/kit-3-r.jpg"></a> 	
 				<p><a href="#0">Go to Contents</a></p>
 			
+			<h2><a id="2"></a>2. Kit revisions</h2>	
+				<p>A total of two revisions were made.</p>
+        <h3>Kit revision 1.0</h3>
+				<a href="images/kit-3.jpg"><img class="gallery_kit" src="images/kit-3-r.jpg"></a> 	
+        <p>The original release, distributed through Crowd Supply logistics. </p>
+        <p>Known issues:
+        <ul>
+          <li>Some tubes were broken during transport, and for this, refunds for the tubes were issued, and customers instructed to buy tubes on the market.</li>
+          <li>Some parts might have fallen out of their sleeves. Please pick these parts up (if there are any), open the sleeves and compare with the picture below.</li>
+        </ul>
+        </p>
+        <p>Contains PCBs with revisions:
+        <ul>
+          <li>PCB1 - REV B</li>
+          <li>PCB2 - REV B</li>
+          <li>PCB3 - REV B</li>
+        </ul>
+        <h3>Kit revision 1.1</h3>
+        <p><i>Picture to be added</i></p>
+        <p>Changelog:
+        <ul>
+          <li>Revised all packaging sleeves, to correct small errors and protect the tubes better.</li>
+          <li>PCB2 redesigned, to reduce EMI interference with the touch panel.</li>
+          <li>USB chip on PCB3 now has integrated XTAL and capacitors.</li>
+        </ul>
+        </p>
+        <p>Contains PCBs with revisions:
+        <ul>
+          <li>PCB1 - REV B</li>
+          <li>PCB2 - REV C</li>
+          <li>PCB3 - REV B</li>
+        </ul>
+        </p>
+				<p><a href="#0">Go to Contents</a></p>
 
-			<h2><a id="2"></a>2. Soldering: PCB1 </h2>	
+			<h2><a id="2"></a>3. Soldering: PCB1 </h2>	
 				<p>Start by plugging and soldering the 10 pin headers.</p>
 				<p>Note that, due to manufacturing tolerances, insertion may be difficult. In that case, try plugging in left side first, and then right, and then middle.</p>
 				<a href="images/kit-4.jpg"><img class="gallery_kit" src="images/kit-4-r.jpg"></a> 	
@@ -75,14 +108,16 @@
 				<p><a href="#0">Go to Contents</a></p>
 
 
-			<h2><a id="3"></a>3. Soldering: PCB2 </h2>	
+			<h2><a id="3"></a>4. Soldering: PCB2 </h2>	
+      <p style="color:red">There are two revisions of this PCB, key differences being PSU section location, and connectors. Please check which one you have!</p>
 				<p>This PCB mostly contains SMD parts, so, it's time to get serious. How you chose to solder is up to you, but the recommended method is to fix a part on one side, then solder the other side.</p>
 				<p>If you are right-handed, the easiest way is to first apply solder to right side pads of each component, as on the picture below.</p>
 				<a href="images/kit-8.jpg"><img class="gallery_kit" src="images/kit-8-r.jpg"></a> 	
 				<p>Then, use tweezers to position component to the required pads. Once at the pads, melt the solder and the adjust the part to sit flush at the reqired place.</p>
-				<p>If you have kit version 1, there are some small traps, placed intentionally to confuse you:</p>
+        <h3>PCB2 REV B</h3>
+				<p>There are some small traps, placed intentionally to confuse you:</p>
 				<ul>
-				<li>PCB2: Q1 on the card should be soldered to Q7 on the PCB</li>
+				<li>PCB2: Q1 on the card sleeve should be soldered to Q7 on the PCB</li>
 				<li>PCB2: C2 silkscreen is obscured by a via, you can find this capacitor near the IC.</li>
 				</ul>
 				<p style="color:red;">Make sure that you oriented the ICs and the transformer correctly! Please take a look at the photo below.</p>
@@ -91,54 +126,63 @@
 				<p>To solder ICs, you can use the "drag" technique, and soldering the transformer will be trivial for you after you have mastered the previous actions :)</p>
 				<a href="images/kit-10.jpg"><img class="gallery_kit" src="images/kit-10-r.jpg"></a> 	
 				<p>Now solder the through-hole connectors.</p>
-				<p>NOTE: if you have kit version 1.0, please take J2 and J3 from PCB3 kit sleeve. These should go to J6 and J7.</p>
-				
+				<p>Please take J2 and J3 from PCB3 kit sleeve. These should go to J6 and J7.</p>
 				<a href="images/kit-11.jpg"><img class="gallery_kit" src="images/kit-11-r.jpg"></a> 	
+        <h3>PCB2 REV C</h3>
+        <p>The revised version of this PCB is slightly different, in the sense that the high voltage PSU was moved to the back of the PCB. Thus, the connectors are soldered differently. </p>
+        <p>Just follow the designators printed on the sleeve, and you should be OK :)</p>
+        <p>The final product should look like this:</p>
+				<a href="images/kit-17.jpg"><img class="gallery_kit" src="images/kit-17-r.jpg"></a> 	
+				<a href="images/kit-18.jpg"><img class="gallery_kit" src="images/kit-18-r.jpg"></a> 	
 				<p><a href="#0">Go to Contents</a></p>
 
 
-			<h2><a id="4"></a>4. Soldering: PCB3 </h2>	
+			<h2><a id="4"></a>5. Soldering: PCB3 </h2>	
 				<p>If you managed to solder PCB2, PCB3 is just more of the same.</p>
 				<p>Solder everything at your own leisure, but leave J7 for the end.</p>
-				<p>NOTE: if you have kit version 1.0, please take J8 and J9 from PCB3 kit sleeve. These should go to J2 and J3.</p>
+				<p>Kit revision 1 note: if you have kit revision 1.0, please take J8 and J9 from PCB3 kit sleeve. These should go to J2 and J3.</p>
 				<p style="color:red;">Each IC has pin 1 marked on its case, please align this dot with the dot found on the footprint.</p>
 				<p><a href="#0">Go to Contents</a></p>
 				
 			
-			<h2><a id="5"></a> 5. PCB3 touch sensor</h2>	
+			<h2><a id="5"></a> 6. PCB3 touch sensor</h2>	
 				<p>Touch sensor (basically a small PCB plate) connects to the touch IC via a 2 pin header, J7. This header should be soldered on the rear side of the PCB.</p>
-				<p>Additionally, if you have KIT VERSION 1.0, a trace on the PCB should be cut. Please click on the picture below for reference.</p>
+				<p>Additionally, if you have a PCB3 REV B, a trace on the PCB should be cut. Please click on the picture below for reference.</p>
 				<a href="images/kit-12.jpg"><img class="gallery_kit" src="images/kit-12-r.jpg"></a> 	
 				<p>Once you do the modifications and soldering, you can remove the plastic part from the 2 pin header, and try to connect the touch plate. It should slide in easily.</p>
 				<p><a href="#0">Go to Contents</a></p>
 	
 
-			<h2><a id="6"></a>6. PCB inspection</h2>	
+			<h2><a id="6"></a>7. PCB inspection</h2>	
 				<p>Now is the time to pause and reflect. Also please inspect the PCBs, they should look like pictured below.</p>
+        <h4>Kit revision 1.0</h4>
 				<a href="images/kit-13.jpg"><img class="gallery_kit" src="images/kit-13-r.jpg"></a> 	
 				<a href="images/kit-14.jpg"><img class="gallery_kit" src="images/kit-14-r.jpg"></a> 	
+        <h4>Kit revision 1.1</h4>
+				<a href="images/kit-19.jpg"><img class="gallery_kit" src="images/kit-19-r.jpg"></a> 	
+				<a href="images/kit-20.jpg"><img class="gallery_kit" src="images/kit-20-r.jpg"></a> 	
 				<p><a href="#0">Go to Contents</a></p>
 
-			<h2><a id="7"></a>7. PCB cleaning</h2>	
+			<h2><a id="7"></a>8. PCB cleaning</h2>	
 				<p>When you're finished with soldering, you should clean up the PCBs. There is no single best way to do this, industrial process boils down to ultrasonics+cleaning chemicals, your best hope is IPA.</p>
 				<p><a href="#0">Go to Contents</a></p>
 	
-			<h2><a id="8"></a>8. Assembly</h2>	
+			<h2><a id="8"></a>9. Assembly</h2>	
 				<p>Try assembling everything. If reality matches the picture below, good job!</p>
 				<a href="images/kit-15.jpg"><img class="gallery_kit" src="images/kit-15-r.jpg"></a> 	
 				<p><a href="#0">Go to Contents</a></p>
 
-			<h2><a id="9"></a>9. Firmware upload</h2>	
+			<h2><a id="9"></a>10. Firmware upload</h2>	
 				<p>Go to <a target="_blank" href="nt-downloads.html">Downloads</a> page.</p>
 				<p>Please return here when you finish! :)</p>
 				<p><a href="#0">Go to Contents</a></p>
 
-			<h2><a id="10"></a>10. Initial configuration</h2>	
+			<h2><a id="10"></a>11. Initial configuration</h2>	
 				<p>Go to <a target="_blank" href="nt-guide.html">User guide</a> page.</p>
 				<p>As before, please return here when you finish! :)</p>
 				<p><a href="#0">Go to Contents</a></p>
 
-			<h2><a id="11"></a>11. Troubleshooting</h2>	
+			<h2><a id="11"></a>12. Troubleshooting</h2>	
 				<p>The expected outcome of this guide is an assembled Nixie Tap, without enclosure, which shows a random time. When you connect it to a computer, it should show up as a COM port. When you touch the sensor plate, the display contents should change.</p>
 				<p>If this is not the case with your device, here are some potential causes and solutions.</p>
 				<h4>Unable to communicate with the device / device not visible in Device Manager</h4>
@@ -149,7 +193,7 @@
 				<p>Check PCB 2 for bad solder joints. </p>
 				<p><a href="#0">Go to Contents</a></p>
 
-			<h2><a id="12"></a>12. Further steps</h2>	
+			<h2><a id="12"></a>13. Further steps</h2>	
 				<p>If you reached this step, I have one word to say to you:</p>
 				<p>CONGRATULATIONS!!! 🥳🥳🥳</p>
 				<p>Now you can 3d print a comfy case for your Nixie Tap, as I have done here:</p>
