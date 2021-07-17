@@ -95,7 +95,7 @@
         </p>
 				<p><a href="#0">Go to Contents</a></p>
 
-			<h2><a id="2"></a>3. Soldering: PCB1 </h2>	
+			<h2><a id="3"></a>3. Soldering: PCB1 </h2>	
 				<p>Start by plugging and soldering the 10 pin headers.</p>
 				<p>Note that, due to manufacturing tolerances, insertion may be difficult. In that case, try plugging in left side first, and then right, and then middle.</p>
 				<a href="images/kit-4.jpg"><img class="gallery_kit" src="images/kit-4-r.jpg"></a> 	
@@ -108,7 +108,7 @@
 				<p><a href="#0">Go to Contents</a></p>
 
 
-			<h2><a id="3"></a>4. Soldering: PCB2 </h2>	
+			<h2><a id="4"></a>4. Soldering: PCB2 </h2>	
       <p style="color:red">There are two revisions of this PCB, key differences being PSU section location, and connectors. Please check which one you have!</p>
 				<p>This PCB mostly contains SMD parts, so, it's time to get serious. How you chose to solder is up to you, but the recommended method is to fix a part on one side, then solder the other side.</p>
 				<p>If you are right-handed, the easiest way is to first apply solder to right side pads of each component, as on the picture below.</p>
@@ -137,7 +137,7 @@
 				<p><a href="#0">Go to Contents</a></p>
 
 
-			<h2><a id="4"></a>5. Soldering: PCB3 </h2>	
+			<h2><a id="5"></a>5. Soldering: PCB3 </h2>	
 				<p>If you managed to solder PCB2, PCB3 is just more of the same.</p>
 				<p>Solder everything at your own leisure, but leave J7 for the end.</p>
 				<p>Kit revision 1 note: if you have kit revision 1.0, please take J8 and J9 from PCB3 kit sleeve. These should go to J2 and J3.</p>
@@ -145,7 +145,7 @@
 				<p><a href="#0">Go to Contents</a></p>
 				
 			
-			<h2><a id="5"></a> 6. PCB3 touch sensor</h2>	
+			<h2><a id="6"></a> 6. PCB3 touch sensor</h2>	
 				<p>Touch sensor (basically a small PCB plate) connects to the touch IC via a 2 pin header, J7. This header should be soldered on the rear side of the PCB.</p>
 				<p>Additionally, if you have a PCB3 REV B, a trace on the PCB should be cut. Please click on the picture below for reference.</p>
 				<a href="images/kit-12.jpg"><img class="gallery_kit" src="images/kit-12-r.jpg"></a> 	
@@ -153,7 +153,7 @@
 				<p><a href="#0">Go to Contents</a></p>
 	
 
-			<h2><a id="6"></a>7. PCB inspection</h2>	
+			<h2><a id="7"></a>7. PCB inspection</h2>	
 				<p>Now is the time to pause and reflect. Also please inspect the PCBs, they should look like pictured below.</p>
         <h4>Kit revision 1.0</h4>
 				<a href="images/kit-13.jpg"><img class="gallery_kit" src="images/kit-13-r.jpg"></a> 	
@@ -163,37 +163,37 @@
 				<a href="images/kit-20.jpg"><img class="gallery_kit" src="images/kit-20-r.jpg"></a> 	
 				<p><a href="#0">Go to Contents</a></p>
 
-			<h2><a id="7"></a>8. PCB cleaning</h2>	
+			<h2><a id="8"></a>8. PCB cleaning</h2>	
 				<p>When you're finished with soldering, you should clean up the PCBs. There is no single best way to do this, industrial process boils down to ultrasonics+cleaning chemicals, your best hope is IPA.</p>
 				<p><a href="#0">Go to Contents</a></p>
 	
-			<h2><a id="8"></a>9. Assembly</h2>	
+			<h2><a id="9"></a>9. Assembly</h2>	
 				<p>Try assembling everything. If reality matches the picture below, good job!</p>
 				<a href="images/kit-15.jpg"><img class="gallery_kit" src="images/kit-15-r.jpg"></a> 	
 				<p><a href="#0">Go to Contents</a></p>
 
-			<h2><a id="9"></a>10. Firmware upload</h2>	
+			<h2><a id="10"></a>10. Firmware upload</h2>	
 				<p>Go to <a target="_blank" href="nt-downloads.html">Downloads</a> page.</p>
 				<p>Please return here when you finish! :)</p>
 				<p><a href="#0">Go to Contents</a></p>
 
-			<h2><a id="10"></a>11. Initial configuration</h2>	
+			<h2><a id="11"></a>11. Initial configuration</h2>	
 				<p>Go to <a target="_blank" href="nt-guide.html">User guide</a> page.</p>
 				<p>As before, please return here when you finish! :)</p>
 				<p><a href="#0">Go to Contents</a></p>
 
-			<h2><a id="11"></a>12. Troubleshooting</h2>	
+			<h2><a id="12"></a>12. Troubleshooting</h2>	
 				<p>The expected outcome of this guide is an assembled Nixie Tap, without enclosure, which shows a random time. When you connect it to a computer, it should show up as a COM port. When you touch the sensor plate, the display contents should change.</p>
 				<p>If this is not the case with your device, here are some potential causes and solutions.</p>
 				<h4>Unable to communicate with the device / device not visible in Device Manager</h4>
-				<p>Check circuitry od the USB interface chip. Parts of interest are: U3, Y2, C9, C10, J1.</p>
+        <p><i>Check circuitry of the USB interface chip. Parts of interest are: U3, Y2, C9, C10, J1.</i></p>
 				<h4>Device visible as a COM port on a PC, but esptool fails</h4>
-				<p>Check the whole PCB 3 for bad solder joints.</p>
+        <p><i>Check the whole PCB 3 for bad solder joints.</i></p>
 				<h4>Firmware sucessfully uploaded, but the display doesn't show anything / display is garbled</h4>
-				<p>Check PCB 2 for bad solder joints. </p>
+        <p><i>Check PCB 2 for bad solder joints.</i></p>
 				<p><a href="#0">Go to Contents</a></p>
 
-			<h2><a id="12"></a>13. Further steps</h2>	
+			<h2><a id="13"></a>13. Further steps</h2>	
 				<p>If you reached this step, I have one word to say to you:</p>
 				<p>CONGRATULATIONS!!! 🥳🥳🥳</p>
 				<p>Now you can 3d print a comfy case for your Nixie Tap, as I have done here:</p>
